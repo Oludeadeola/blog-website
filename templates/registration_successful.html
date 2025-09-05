@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        table {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 35%;
+            height: 100vh;
+            border-style: solid;
+            border-width: 1px;
+            background-color: darkslateblue;
+        }
+
+        .Logo_Table {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20vh;
+            width: 100%;
+        }
+
+        #Bloggy_Logo {
+            height: 10vh;
+            width: 20vw;
+        }
+
+        .Body_Row {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 80vh;
+            width: 100%;
+            background-color: honeydew;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr class="Logo_Table">
+        <td>
+            <img id="Bloggy_Logo" alt="bloggy logo"
+                 src="https://res.cloudinary.com/dxqpdqzue/image/upload/v1714076456/bloggy-high-resolution-logo-transparent_wtmqam.png"
+            />
+        </td>
+    </tr>
+    <tr class="Body_Row">
+        <td>Welcome {{ name }}</td>
+        <td>Congratulations! 🎉 Your registration was successful! We're thrilled to welcome you to our community of
+            innovators, enthusiasts, and dreamers. Your decision to join us marks the beginning of an exciting journey
+            filled with endless possibilities.
+        </td>
+        <td>As a member, you now have access to a treasure trove of resources, from exclusive content to cutting-edge
+            tools, designed to empower you on your path to success. Whether you're here to learn, connect, or create,
+            we're here to support you every step of the way.
+        </td>
+        <td>But wait, there's more! Get ready to dive into a world of opportunities where you can unleash your
+            creativity, share your ideas, and collaborate with like-minded individuals from around the globe. From
+            insightful discussions to inspiring collaborations, the possibilities are truly limitless.
+        </td>
+        <td>As you embark on this adventure, don't forget to explore all the features and benefits available to you.
+            From personalized profiles to interactive forums, there's something for everyone. And with regular updates
+            and new features rolling out, there's always something exciting to discover.
+        </td>
+        <td>So, what are you waiting for? Dive in and start exploring everything our community has to offer. Your
+            journey starts now, and we can't wait to see where it takes you. Welcome aboard! 🌟
+        </td>
+    </tr>
+</table>
+</body>
+</html>

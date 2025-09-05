@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:13.2-alpine
+    restart: always
+    environment:
+      - POSTGRES_DB=bloggy_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=ayanniyi20
+    ports:
+      - "5432:5432"
+
+  cache:
+    image: redis:6.2-alpine
+    ports:
+      - "6379:6379"
+
+  broker:
+    image: rabbitmq:3.8-management-alpine
+    environment:
+      - RABBITMQ_DEFAULT_USER=rabbitmq
+      - RABBITMQ_DEFAULT_PASS=rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  elasticsearch:
+    image: elasticsearch:7.17.9
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+      - "9300:9300"
